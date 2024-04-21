@@ -1,0 +1,180 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.createTask {
+  background-color: #131213;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+}
+
+.formHeading {
+  color: #f3aa4e;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+}
+
+
+.label-text {
+  color: #f8f8f8;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.input-text {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  padding-left: 15px;
+  outline: none;
+}
+
+
+.select-text {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  padding-left: 15px;
+  outline: none;
+}
+
+
+.option-text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.formButton {
+  background-color: #f3aa4e;
+  height: 40px;
+  width: 125px;
+  border-radius: 10px;
+  border: none;
+  color: #f1f5f9;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.addTask {
+  background-color: #000000;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.mainHeading {
+  color: #f1f5f9;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+.tagListUl {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+
+.tagList {
+  display: flex;
+  margin: 7px;
+}
+
+
+.taskUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100%;
+  padding: 0px;
+}
+
+
+.taskLi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323f4b;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+
+.taskText {
+  color: #f1f5f9;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.taskTag {
+  background-color: #f3aa4e;
+  border: none;
+  border-radius: 10px;
+  color: #323f4b;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.noTask {
+  color: #f1f5f9;
+  font-size: 24px;
+  font-weight: 600;
+  align-self: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
