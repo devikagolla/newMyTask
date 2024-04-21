@@ -98,35 +98,35 @@ class MyTask extends Component {
     const {textInput, selectTag} = this.state
 
     return (
-      <div className="createTask">
-        <form className="createForm" onSubmit={this.onSubmitForm}>
-          <h1 className="formHeading">Create a task!</h1>
-          <div className="inputDiv">
-            <label className="label-text" htmlFor="task">
+      <div className='createTask'>
+        <form className='createForm' onSubmit={this.onSubmitForm}>
+          <h1 className='formHeading'>Create a task!</h1>
+          <div className='inputDiv'>
+            <label className='label-text' htmlFor='task'>
               Task
             </label>
             <input
-              className="input-text"
-              id="task"
-              type="text"
+              className='input-text'
+              id='task'
+              type='text'
               value={textInput}
-              placeholder="Enter the task here"
+              placeholder='Enter the task here'
               onChange={this.onChangeInput}
             />
           </div>
-          <div className="inputDiv">
-            <label className="label-text" htmlFor="select">
+          <div className='inputDiv'>
+            <label className='label-text' htmlFor='select'>
               Tags
             </label>
             <select
-              className="select-text"
-              id="select"
+              className='select-text'
+              id='select'
               value={selectTag}
               onChange={this.onChangeOption}
             >
               {tagsList.map(each => (
                 <option
-                  className="option-text"
+                  className='option-text'
                   value={each.optionId}
                   key={each.optionId}
                 >
@@ -135,7 +135,7 @@ class MyTask extends Component {
               ))}
             </select>
           </div>
-          <button className="formButton" type="submit">
+          <button className='formButton' type='submit'>
             Add Task
           </button>
         </form>
@@ -153,9 +153,9 @@ class MyTask extends Component {
     return (
       <>
         {filterList.map(each => (
-          <li className="taskLi" key={each.id}>
-            <p className="taskText">{each.input}</p>
-            <p className="taskTag">{each.activeTagName}</p>
+          <li className='taskLi' key={each.id}>
+            <p className='taskText'>{each.input}</p>
+            <p className='taskTag'>{each.activeTagName}</p>
           </li>
         ))}
       </>
@@ -166,16 +166,16 @@ class MyTask extends Component {
     const {taskList, activeTag} = this.state
 
     return (
-      <div className="addTask">
-        <h1 className="mainHeading">Tags</h1>
-        <ul className="tagListUl">
+      <div className='addTask'>
+        <h1 className='mainHeading'>Tags</h1>
+        <ul className='tagListUl'>
           {tagsList.map(each => {
             const isActive = activeTag === each.optionId
             return (
-              <li className="tagList" key={each.optionId}>
+              <li className='tagList' key={each.optionId}>
                 <TagButton
-                  className="tagButton"
-                  type="button"
+                  className='tagButton'
+                  type='button'
                   onClick={this.onClickTag}
                   value={each.optionId}
                   isActive={isActive}
@@ -186,12 +186,12 @@ class MyTask extends Component {
             )
           })}
         </ul>
-        <h1 className="mainHeading">Tasks</h1>
-        <ul className="taskUl">
+        <h1 className='mainHeading'>Tasks</h1>
+        <ul className='taskUl'>
           {taskList.length > 0 ? (
             this.renderTaskCard()
           ) : (
-            <p className="noTask">No Tasks Added Yet</p>
+            <p className='noTask'>No Tasks Added Yet</p>
           )}
         </ul>
       </div>
@@ -200,7 +200,7 @@ class MyTask extends Component {
 
   render() {
     return (
-      <div className="mainContainer">
+      <div className='mainContainer'>
         {this.renderCreateTask()}
         {this.renderAddTask()}
       </div>
